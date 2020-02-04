@@ -16,7 +16,6 @@ return (
           longer.
         </MDBCardText>
         <MDBCardText small muted>
-          Last updated 3 mins ago
         </MDBCardText>
       </MDBCardBody>
     </MDBCard>
@@ -29,7 +28,6 @@ return (
           additional content.
         </MDBCardText>
         <MDBCardText small muted>
-          Last updated 3 mins ago
         </MDBCardText>
       </MDBCardBody>
     </MDBCard>
@@ -43,7 +41,6 @@ return (
           content than the first to show that equal height action.
         </MDBCardText>
         <MDBCardText small muted>
-          Last updated 3 mins ago
         </MDBCardText>
       </MDBCardBody>
     </MDBCard>

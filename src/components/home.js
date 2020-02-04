@@ -8,12 +8,12 @@ const JumbotronPage = () => {
     <MDBContainer>
       <MDBRow>
         <MDBCol>
-          <MDBJumbotron style={{ padding: 0 }}>
+          <MDBJumbotron style={{ padding: 0 }} className = "text-center">
             <MDBCol className="text-white text-center py-5 px-4 my-5" style={{ backgroundImage: `url(https://mdbootstrap.com/img/Photos/Others/gradient1.jpg)` }}>
-              <MDBCol className="py-5">
-                <MDBCardTitle className="h1-responsive pt-3 m-5 font-bold">Create your beautiful website with MDBootstrap</MDBCardTitle>
-                <p className="mx-5 mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat fugiat, laboriosam, voluptatem,
-                  optio vero odio nam sit officia accusamus minus error nisi architecto nulla ipsum dignissimos. Odit sed qui, dolorum!
+              <MDBCol className="py-5 text-center">
+                <MDBCardTitle className="h1-responsive pt-3 m-5 font-bold">Search Vehicle to see their Vehicle History Report</MDBCardTitle>
+                <p className="mx-5 mb-5">
+                  Search vehicle by its Registration Number or Vin Number, if it is on the system you will b able to see its vehicle history report quickly.
                 </p>
                 <MDBInput className="mw-75" label="Search by Vin Number OR Registration Number" background />
                 <Radio/>

@@ -9,17 +9,13 @@ const JumbotronPage = () => {
           <MDBJumbotron className = "winter-neva-gradient">
             <MDBCardBody>
               <MDBCardTitle className="h2">
-                Material Design for Bootstrap
+                CarChain
               </MDBCardTitle>
               <p className="blue-text my-4 font-weight-bold">
-                Powerful and free Material Design UI KIT
+                Know your Car.
               </p>
               <MDBCardText>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga
-                aliquid dolorem ea distinctio exercitationem delectus qui, quas
-                eum architecto, amet quasi accusantium, fugit consequatur
-                ducimus obcaecati numquam molestias hic itaque accusantium
-                doloremque laudantium, totam rem aperiam.
+              CAR-CHAIN is a software designed to provide trusted, genuine and verifiable vehicle history reports spare part supply chain management system that will eradicate insecurities within prevailing solutions such as tampered reports and the use of non-OEM spare parts through its secure blockchain network.
               </MDBCardText>
               <hr className="my-4" />
               <div className="pt-2">
@@ -27,14 +23,14 @@ const JumbotronPage = () => {
                   color="primary"
                   className="waves-effect"
                 >
-                  Buy now <MDBIcon far icon="gem" />
+                  Our Features <MDBIcon far icon="gem" />
                 </MDBBtn>
                 <MDBBtn
                   outline
                   color="primary"
                   className="waves-effect"
                 >
-                  Download <MDBIcon icon="download" />
+                  Download App <MDBIcon icon="download" />
                 </MDBBtn>
               </div>
             </MDBCardBody>

@@ -7,6 +7,8 @@ import About from "./about";
 import SignUpUser from "./signup";
 import LogInUser from "./signin";
 
+import log from "./../images/logo.png";
+
 class NavbarPage extends Component {
 state = {
   isOpen: false
@@ -19,9 +21,9 @@ toggleCollapse = () => {
 render() {
   return (
     <Router>
-      <MDBNavbar color="elegant-color-dark" dark expand="md">
+      <MDBNavbar color="light-blue darken-1" dark expand="md">
         <MDBNavbarBrand>
-          <strong className="white-text">Navbar</strong>
+          <img src={log} style = {{width : "7rem"}} className="rounded mx-auto d-block mb-2" alt="aligment" />
         </MDBNavbarBrand>
         <MDBNavbarToggler onClick={this.toggleCollapse} />
         <MDBCollapse id="navbarCollapse3" isOpen={this.state.isOpen} navbar>
@@ -42,12 +44,22 @@ render() {
           <MDBNavbarNav right>
             <MDBNavItem>
               <MDBNavLink className="waves-effect waves-light" to="#!">
-                <MDBIcon fab icon="twitter" />
+              <MDBIcon fab icon="facebook" />              
               </MDBNavLink>
             </MDBNavItem>
             <MDBNavItem>
               <MDBNavLink className="waves-effect waves-light" to="#!">
-                <MDBIcon fab icon="google-plus-g" />
+              <MDBIcon fab icon="instagram" />              
+              </MDBNavLink>
+            </MDBNavItem>
+            <MDBNavItem>
+              <MDBNavLink className="waves-effect waves-light" to="#!">
+              <MDBIcon fab icon="linkedin" />
+              </MDBNavLink>
+            </MDBNavItem>
+            <MDBNavItem>
+              <MDBNavLink className="waves-effect waves-light" to="#!">
+              <MDBIcon icon="at" />
               </MDBNavLink>
             </MDBNavItem>
           </MDBNavbarNav>

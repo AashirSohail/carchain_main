@@ -5,7 +5,7 @@ const InputPage = () => {
   return (
     <div>
       {/* Material inline */}
-      <MDBFormInline className ="mx-auto">
+      <MDBFormInline className ="mx-auto text-center">
         <MDBInput
           label='Reg Num'
           type='checkbox'
