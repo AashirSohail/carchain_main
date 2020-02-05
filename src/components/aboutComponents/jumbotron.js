@@ -10,7 +10,7 @@ const JumbotronPage = () => {
             <MDBCardBody>
               <MDBCardTitle className="h2">
               <MDBAnimation type="fadeInRight" reveal duration="1.5s" delay="0.7s">
-                CarChain
+                Car Chain
               </MDBAnimation>
               </MDBCardTitle>
               <MDBAnimation type="fadeInLeft" reveal duration="1.5s" delay="1.2s">
