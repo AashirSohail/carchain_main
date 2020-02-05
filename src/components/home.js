@@ -1,5 +1,5 @@
 import React from "react";
-import { MDBJumbotron, MDBBtn, MDBContainer, MDBRow, MDBCol, MDBCardTitle, MDBIcon, MDBInput} from "mdbreact";
+import { MDBJumbotron, MDBBtn, MDBContainer, MDBRow, MDBCol, MDBCardTitle, MDBIcon, MDBInput,MDBAnimation} from "mdbreact";
 import Radio from "./homeComponents/radioBtn";
 
 const JumbotronPage = () => {
@@ -8,7 +8,7 @@ const JumbotronPage = () => {
     <MDBContainer>
       <MDBRow>
         <MDBCol>
-          <MDBJumbotron style={{ padding: 0 }} className = "text-center">
+          <MDBJumbotron style={{ padding: 0 }} className = "text-center mw-100">
             <MDBCol className="text-white text-center py-5 px-4 my-5" style={{ backgroundImage: `url(https://mdbootstrap.com/img/Photos/Others/gradient1.jpg)` }}>
               <MDBCol className="py-5 text-center">
                 <MDBCardTitle className="h1-responsive pt-3 m-5 font-bold">Search Vehicle to see their Vehicle History Report</MDBCardTitle>
@@ -17,7 +17,9 @@ const JumbotronPage = () => {
                 </p>
                 <MDBInput className="mw-75" label="Search by Vin Number OR Registration Number" background />
                 <Radio/>
+                <MDBAnimation reveal type="fadeInUp" duration="1s" delay="1s">
                 <MDBBtn outline color="white" className="mb-5"><MDBIcon icon="search" className="mr-2"></MDBIcon> Search For Vehicle</MDBBtn>
+                </MDBAnimation>
               </MDBCol>
             </MDBCol>
           </MDBJumbotron>

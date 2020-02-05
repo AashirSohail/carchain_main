@@ -6,8 +6,9 @@ import Home from "./home";
 import About from "./about";
 import SignUpUser from "./signup";
 import LogInUser from "./signin";
+import Workshop from "./workshop";
 
-import log from "./../images/logo.png";
+import log from "./../images/logo_new.png";
 
 class NavbarPage extends Component {
 state = {
@@ -21,45 +22,33 @@ toggleCollapse = () => {
 render() {
   return (
     <Router>
-      <MDBNavbar color="light-blue darken-1" dark expand="md">
+      <MDBNavbar color="elegant-color-dark" dark expand="md">
         <MDBNavbarBrand>
           <img src={log} style = {{width : "7rem"}} className="rounded mx-auto d-block mb-2" alt="aligment" />
         </MDBNavbarBrand>
         <MDBNavbarToggler onClick={this.toggleCollapse} />
         <MDBCollapse id="navbarCollapse3" isOpen={this.state.isOpen} navbar>
           <MDBNavbarNav right>
-            <MDBNavItem active>
+            <MDBNavItem className = "mr-2">
               <MDBNavLink to="home">Home</MDBNavLink>
             </MDBNavItem>
-            <MDBNavItem>
+            <MDBNavItem className = "mr-2">
               <MDBNavLink to="about">About</MDBNavLink>
             </MDBNavItem>
-            <MDBNavItem>
+            <MDBNavItem className = "mr-2">
               <MDBNavLink to="login">Login</MDBNavLink>
             </MDBNavItem>
-            <MDBNavItem>
+            <MDBNavItem className = "mr-2">
             <MDBNavLink to="signup">Signup</MDBNavLink>
             </MDBNavItem>
           </MDBNavbarNav>
           <MDBNavbarNav right>
             <MDBNavItem>
-              <MDBNavLink className="waves-effect waves-light" to="#!">
-              <MDBIcon fab icon="facebook" />              
-              </MDBNavLink>
-            </MDBNavItem>
-            <MDBNavItem>
-              <MDBNavLink className="waves-effect waves-light" to="#!">
-              <MDBIcon fab icon="instagram" />              
-              </MDBNavLink>
-            </MDBNavItem>
-            <MDBNavItem>
-              <MDBNavLink className="waves-effect waves-light" to="#!">
-              <MDBIcon fab icon="linkedin" />
-              </MDBNavLink>
-            </MDBNavItem>
-            <MDBNavItem>
-              <MDBNavLink className="waves-effect waves-light" to="#!">
-              <MDBIcon icon="at" />
+              <MDBNavLink className="waves-effect waves-light text-center" to="#!">
+              <a href="#!"><MDBIcon fab icon="facebook" className = "white-text" />&ensp;&ensp; </a>
+              <a href="#!"><MDBIcon fab icon="instagram" className = "white-text" />&ensp;&ensp; </a>
+              <a href="#!"><MDBIcon fab icon="linkedin" className = "white-text" />&ensp;&ensp; </a>
+              <a href="#!"><MDBIcon icon="at" className = "white-text" />&ensp;&ensp; </a>
               </MDBNavLink>
             </MDBNavItem>
           </MDBNavbarNav>
@@ -71,6 +60,7 @@ render() {
             <Route path="/about" exact component={About} />
             <Route path="/signup" component={SignUpUser} />
             <Route path="/login" component={LogInUser} />
+            <Route path="/workshop" component={Workshop} />
       </Switch>
     </Router>
     );
