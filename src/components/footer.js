@@ -1,9 +1,9 @@
 import React from "react";
-import { MDBCol, MDBContainer, MDBRow, MDBFooter,MDBIcon, MDBAnimation, MDBBox, MDBFormInline } from "mdbreact";
+import { MDBCol, MDBContainer, MDBRow, MDBFooter,MDBIcon, MDBAnimation, MDBBox} from "mdbreact";
 
 const FooterPage = () => {
   return (
-    <MDBFooter color="blue-gradient" className="font-small pt-4 mt-4 float-bottom">
+    <MDBFooter color="blue-gradient" className="font-small pt-4 mt-4">
       <MDBContainer fluid className="text-center text-md-left">
         <MDBRow className = "mr-2" >
           <MDBCol md="6">
@@ -32,24 +32,19 @@ const FooterPage = () => {
               </li>
             </ul>
           </MDBCol>
-          <MDBCol md="3" className = "px-5">
-          <MDBFormInline>
-          <MDBAnimation reveal type="fadeInRight" duration="1s" delay="1.8s">
-            <MDBBox tag="h5" className= ""><strong>Connect With Us</strong></MDBBox>
+          <MDBCol md="3" className = "px-4">
+            <MDBAnimation reveal type="fadeInRight" duration="1s" delay="1.8s">
+              <MDBBox tag="h5" className= ""><strong>Connect With Us</strong></MDBBox>
             </MDBAnimation>
             <MDBAnimation reveal type="fadeInRight" duration="1s" delay="2.1s">
-            &ensp;&ensp;&ensp;&ensp;<a href="#!"><MDBIcon fab size = "2x" icon="facebook" />&ensp;&ensp;&ensp; </a>
+             <a href="#!"><MDBIcon className = "pl-4" fab size = "2x" icon="facebook" />&ensp;&ensp;&ensp; </a>
+            
+             <a href="#!"><MDBIcon fab size = "2x" icon="instagram" />&ensp;&ensp;&ensp; </a>
+            
+             <a href="#!"><MDBIcon fab size = "2x" icon="linkedin" />&ensp;&ensp;&ensp; </a>
+            
+             <a href="#!"><MDBIcon size = "2x" icon="at" />&ensp;&ensp; </a>
             </MDBAnimation>
-            <MDBAnimation reveal type="fadeInRight" duration="1s" delay="2.4s">
-            <a href="#!"><MDBIcon fab size = "2x" icon="instagram" />&ensp;&ensp;&ensp; </a>
-            </MDBAnimation>
-            <MDBAnimation reveal type="fadeInRight" duration="1s" delay="2.7s">
-            <a href="#!"><MDBIcon fab size = "2x" icon="linkedin" />&ensp;&ensp;&ensp; </a>
-            </MDBAnimation>
-            <MDBAnimation reveal type="fadeInRight" duration="1s" delay="3s">
-            <a href="#!"><MDBIcon size = "2x" icon="at" />&ensp;&ensp; </a>
-            </MDBAnimation>
-          </MDBFormInline>
           </MDBCol>
         </MDBRow>
       </MDBContainer>

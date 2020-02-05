@@ -7,8 +7,10 @@ import About from "./about";
 import SignUpUser from "./signup";
 import LogInUser from "./signin";
 import Workshop from "./workshop";
+import Report from "./report";
 
-import log from "./../images/logo_new.png";
+
+import log from "./../images/block.png";
 
 class NavbarPage extends Component {
 state = {
@@ -41,6 +43,9 @@ render() {
             <MDBNavItem className = "mr-2">
             <MDBNavLink to="signup">Signup</MDBNavLink>
             </MDBNavItem>
+            <MDBNavItem className = "mr-2">
+            <MDBNavLink to="report">Report</MDBNavLink>
+            </MDBNavItem>
           </MDBNavbarNav>
           <MDBNavbarNav right>
             <MDBNavItem>
@@ -61,6 +66,7 @@ render() {
             <Route path="/signup" component={SignUpUser} />
             <Route path="/login" component={LogInUser} />
             <Route path="/workshop" component={Workshop} />
+            <Route path="/report" component={Report} />
       </Switch>
     </Router>
     );
