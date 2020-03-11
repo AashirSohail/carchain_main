@@ -1,15 +1,16 @@
 import React from "react";
-import { MDBJumbotron, MDBBtn, MDBContainer, MDBRow, MDBCol, MDBCardTitle, MDBIcon, MDBInput,MDBAnimation} from "mdbreact";
+import {MDBJumbotron, MDBBtn, MDBRow, MDBCol, MDBCardTitle, MDBIcon, MDBInput,MDBAnimation,MDBContainer} from "mdbreact";
 import Radio from "./homeComponents/radioBtn";
+import SearchResults from "./homeComponents/searchResults";
+
 
 const JumbotronPage = () => {
   return (
       <div>
-    <MDBContainer>
       <MDBRow>
         <MDBCol>
           <MDBJumbotron style={{ padding: 0 }} className = "text-center mw-100">
-            <MDBCol className="text-white text-center py-5 px-4 my-5" style={{ backgroundImage: `url(https://mdbootstrap.com/img/Photos/Others/gradient1.jpg)` }}>
+            <MDBCol className="text-white text-center py-3 px-4" style={{ opacity: "", backgroundImage: `url(https://miro.medium.com/max/3200/1*CvjclMDwgh9AqED_h5UVCA.jpeg)` }}>
               <MDBCol className="py-5 text-center">
                 <MDBCardTitle className="h1-responsive pt-3 m-5 font-bold">Search Vehicle to see their Vehicle History Report</MDBCardTitle>
                 <p className="mx-5 mb-5">
@@ -25,8 +26,20 @@ const JumbotronPage = () => {
           </MDBJumbotron>
         </MDBCol>
       </MDBRow>
-    </MDBContainer>
-    </div>
+
+      <MDBContainer>
+      <MDBRow>
+      <SearchResults/>
+      <SearchResults/>
+      <SearchResults/>
+      <SearchResults/>      
+      <SearchResults/>
+      <SearchResults/>
+      </MDBRow>
+      </MDBContainer>
+
+
+ </div>
   )
 }
 
