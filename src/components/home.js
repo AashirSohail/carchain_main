@@ -19,7 +19,7 @@ const JumbotronPage = () => {
                 <MDBInput className="mw-75" label="Search by Vin Number OR Registration Number" background />
                 <Radio/>
                 <MDBAnimation reveal type="fadeInUp" duration="1s" delay="1s">
-                <MDBBtn outline color="white" className="mb-5"><MDBIcon icon="search" className="mr-2"></MDBIcon> Search For Vehicle</MDBBtn>
+                <a class="waves-effect waves-light btn-large"><i class="material-icons left">search</i>Search</a>
                 </MDBAnimation>
               </MDBCol>
             </MDBCol>
@@ -29,11 +29,6 @@ const JumbotronPage = () => {
 
       <MDBContainer>
       <MDBRow>
-      <SearchResults/>
-      <SearchResults/>
-      <SearchResults/>
-      <SearchResults/>      
-      <SearchResults/>
       <SearchResults/>
       </MDBRow>
       </MDBContainer>

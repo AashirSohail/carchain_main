@@ -8,6 +8,10 @@ import SignUpUser from "./signup";
 import LogInUser from "./signin";
 import Workshop from "./workshop";
 import Report from "./report";
+import DashBoard from './dashboard';
+import Alert from './alert';
+import Transfer from './ownerTransfer';
+
 
 
 import log from "./../images/block.png";
@@ -26,35 +30,47 @@ render() {
     <Router>
       <MDBNavbar color="elegant-color-dark" dark expand="md">
         <MDBNavbarBrand>
-          <img src={log} style = {{width : "7rem"}} className="rounded mx-auto d-block mb-2" alt="aligment" />
-        </MDBNavbarBrand>
+        <img src={log} style = {{width : "7rem"}} className="rounded mx-auto d-block mb-2" alt="aligment" />        </MDBNavbarBrand>
         <MDBNavbarToggler onClick={this.toggleCollapse} />
         <MDBCollapse id="navbarCollapse3" isOpen={this.state.isOpen} navbar>
           <MDBNavbarNav right>
-            <MDBNavItem className = "mr-2">
+            <MDBNavItem active>
               <MDBNavLink to="home">Home</MDBNavLink>
             </MDBNavItem>
-            <MDBNavItem className = "mr-2">
+            <MDBNavItem>
               <MDBNavLink to="about">About</MDBNavLink>
             </MDBNavItem>
-            <MDBNavItem className = "mr-2">
+            <MDBNavItem>
               <MDBNavLink to="login">Login</MDBNavLink>
             </MDBNavItem>
-            <MDBNavItem className = "mr-2">
-            <MDBNavLink to="signup">Signup</MDBNavLink>
+            <MDBNavItem>
+              <MDBNavLink to="signup">Signup</MDBNavLink>
             </MDBNavItem>
-            <MDBNavItem className = "mr-2">
-            <MDBNavLink to="report">Report</MDBNavLink>
+            <MDBNavItem>
+              <MDBNavLink to="report">Report</MDBNavLink>
+            </MDBNavItem>
+            <MDBNavItem>
+              <MDBNavLink to="dashboard">DashBoard</MDBNavLink>
+            </MDBNavItem>
+            <MDBNavItem>
+              <MDBNavLink to="alert">Alerts</MDBNavLink>
+            </MDBNavItem>
+            <MDBNavItem>
+              <MDBNavLink to="transfer">Transfer Owner</MDBNavLink>
             </MDBNavItem>
           </MDBNavbarNav>
           <MDBNavbarNav right>
             <MDBNavItem>
-              <MDBNavLink className="waves-effect waves-light text-center" to="#!">
-              <a href="#!"><MDBIcon fab icon="facebook" className = "white-text" />&ensp;&ensp; </a>
-              <a href="#!"><MDBIcon fab icon="instagram" className = "white-text" />&ensp;&ensp; </a>
-              <a href="#!"><MDBIcon fab icon="linkedin" className = "white-text" />&ensp;&ensp; </a>
-              <a href="#!"><MDBIcon icon="at" className = "white-text" />&ensp;&ensp; </a>
+              <MDBNavLink className="waves-effect waves-light" to="#!">
+                <MDBIcon fab icon="twitter" />
               </MDBNavLink>
+            </MDBNavItem>
+            <MDBNavItem>
+              <MDBNavLink className="waves-effect waves-light" to="#!">
+                <MDBIcon fab icon="google-plus-g" />
+              </MDBNavLink>
+            </MDBNavItem>
+            <MDBNavItem>
             </MDBNavItem>
           </MDBNavbarNav>
         </MDBCollapse>
@@ -67,6 +83,11 @@ render() {
             <Route path="/login" component={LogInUser} />
             <Route path="/workshop" component={Workshop} />
             <Route path="/report" component={Report} />
+            <Route path="/dashboard" component={DashBoard} />
+            <Route path="/alert" component={Alert} />
+            <Route path="/transfer" component={Transfer} />
+
+
       </Switch>
     </Router>
     );
@@ -74,3 +95,14 @@ render() {
 }
 
 export default NavbarPage;
+
+/*
+            <MDBNavItem>
+              <MDBNavLink className="waves-effect waves-light text-center" to="#!">
+              <a href="#!"><MDBIcon fab icon="facebook" className = "white-text" />&ensp;&ensp; </a>
+              <a href="#!"><MDBIcon fab icon="instagram" className = "white-text" />&ensp;&ensp; </a>
+              <a href="#!"><MDBIcon fab icon="linkedin" className = "white-text" />&ensp;&ensp; </a>
+              <a href="#!"><MDBIcon icon="at" className = "white-text" />&ensp;&ensp; </a>
+              </MDBNavLink>
+            </MDBNavItem>
+*/ 

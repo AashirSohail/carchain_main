@@ -45,7 +45,7 @@ return (
                         <img src={sai} style = {{width : "7rem"}} className="rounded mx-auto d-block mb-2" alt="aligment" />
                     </MDBAnimation>
                     <MDBAnimation type="fadeInUp" reveal duration="1.5s" delay="1.8s">
-                    <p className="h5">Saim Raza</p>
+                    <h5>Saim Raza</h5>
                     </MDBAnimation>
                     <MDBAnimation type="fadeInUp" reveal duration="1.5s" delay="2s">
                     <p>Developer</p>

@@ -26,19 +26,8 @@ const JumbotronPage = () => {
               <hr className="my-4" />
               <MDBAnimation type="fadeInUp" reveal duration="1.5s" delay="1.5s">
               <div className="pt-2">
-                <MDBBtn
-                  color="primary"
-                  className="waves-effect"
-                >
-                  Our Features <MDBIcon far icon="gem" />
-                </MDBBtn>
-                <MDBBtn
-                  outline
-                  color="primary"
-                  className="waves-effect"
-                >
-                  Download App <MDBIcon icon="download" />
-                </MDBBtn>
+              <a class="waves-effect waves-light btn"><i class="material-icons left pb-2"><MDBIcon icon="download" class = "pb-2" /></i>Download</a>
+              <a class="waves-effect waves-light btn"><i class="material-icons right"><MDBIcon icon="star" /></i>Features</a>
               </div>
               </MDBAnimation>
 

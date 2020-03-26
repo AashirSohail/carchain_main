@@ -3,21 +3,22 @@ import { MDBInput, MDBFormInline } from 'mdbreact';
 
 const InputPage = () => {
   return (
-    <div>
-      {/* Material inline */}
+    
+    <div className ="text-center">
       <MDBFormInline className ="text-center">
-        <MDBInput
-          label='Reg Num'
-          type='checkbox'
-          id='checkbox1'
-          containerClass='mr-5'
-        />
-        <MDBInput
-          label='Vin Num'
-          type='checkbox'
-          id='checkbox2'
-          containerClass='mr-5'
-        />
+      <p className ="text-center">
+      <label>
+        <input name="group1" type="radio" checked />
+        <span>Vin Number</span>
+      </label>
+    </p>
+    <p className = "ml-3">
+      <label>
+        <input name="group1" type="radio" />
+        <span>Registration Numbe</span>
+      </label>
+    </p>
+
       </MDBFormInline>
     </div>
   );

@@ -8,11 +8,9 @@ import Team from "./aboutComponents/team";
 const JumbotronPage = () => {
   return (
       <div className = "mt-5">
-        <Car/> 
         <Jmb/>
         <Ser/>
         <Team/>
-        
       </div>
     
   )
